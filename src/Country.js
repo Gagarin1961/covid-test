@@ -30,10 +30,17 @@ const Country = () => {
 
         console.log(country);
 
-        if (error)
+        if (error) {
             return (
                 <li>{error.message}</li>
             )
+        }
+        else if (country === undefined)
+        {
+            return (
+                <li>No data for {match.params.country}</li>
+            )
+        }
         else
         {
             return (
