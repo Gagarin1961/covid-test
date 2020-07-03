@@ -29,7 +29,6 @@ const Countries = () => {
             </Route>
             <Route>
                 <div>
-                    {console.log(navigationHistory)}
                     {countries.map((country, index) => (
                         <div key={index}>
                             <Button onClick={() => navigationHistory.push(country.Country)}>{country.Country}</Button>
