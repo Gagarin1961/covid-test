@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
 import axios from 'axios';
-import { Router, Route, Switch, useHistory } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
+import { Route, Switch, useHistory } from 'react-router-dom';
 import Country from './Country';
 import {Button} from "shards-react";
 
