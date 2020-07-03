@@ -28,8 +28,6 @@ const Country = () => {
         const index = countries.map(el => el.Country).indexOf(match.params.country);
         let country = countries[index];
 
-        console.log(country);
-
         if (error) {
             return (
                 <li>{error.message}</li>
